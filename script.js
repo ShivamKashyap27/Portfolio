@@ -1,3 +1,11 @@
+let menu = document.querySelector('.profile');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-z');
+    navbar.classList.toggle('open');
+};
+
 let typed = new Typed(".msg", {
     strings: ["Frontend Developer", "Web Developer"],
     typeSpeed:100,
