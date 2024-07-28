@@ -137,6 +137,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    
     width: 40px;
     height: 40px;
     background: transparent;
@@ -174,7 +175,7 @@ body {
 }
 
 .btn-box:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
 
 .img {
@@ -191,7 +192,6 @@ body {
     animation: slideUP 1s ease forwards;
     animation-delay: 1s; 
     top: 200px;
-    
 }
 
 .responsive {
@@ -201,6 +201,8 @@ body {
     border-top-right-radius: 251px;
     border-bottom-left-radius: 251px;
     border-bottom-right-radius: 251px;
+    box-shadow: 0 0 5pc cyan, 0 0 10px cyan, 0 0 15px cyan;
+    border: #0ef 8px solid;
 }
 
 /*about*/
@@ -209,8 +211,6 @@ body {
     background-color: black;
     display: grid;
     grid-template-columns: repeat(2, .5fr);
-    /*align-items: center;*/
-    /*gap: 1.5rem;*/
     width: 100%;
     justify-content: space-between;
     min-height: 100vh;
@@ -234,7 +234,6 @@ body {
     max-width: 492px;
     max-height: 492px;
     border-radius: 90px;
-    /*box-shadow: 0 0 5pc cyan, 0 0 5px cyan, 0 0 10px cyan;*/
     border: #0ef 5px solid;
 }
 
@@ -275,7 +274,7 @@ body {
 }
 
 .abtbtn-box:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
+    box-shadow: 0 0 5pc cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
 
 
@@ -380,7 +379,7 @@ body {
 }
 
 .progress-line.javaScript span {
-    width: 75%;
+    width: 70%;
 }
 
 .progress-line.react span {
@@ -409,7 +408,7 @@ body {
 }
 
 .progress-line.javaScript span::after {
-    content: "75%";
+    content: "70%";
 }
 
 .progress-line.react span::after {
@@ -652,7 +651,6 @@ body {
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
-    /*box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;*/
     border: #0ef 5px solid;
 }
 
@@ -696,11 +694,11 @@ body {
 }
 
 .read:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
 
 .prj-list div:hover {
-    transform: translateY(-2px);
+    transform: translateY(-10px);
 }
 
 
@@ -923,9 +921,9 @@ body {
     .img {
         width: 500px;
         height: 50px;
-        position: relative;
-        top: 20%;
-        left: 500px;
+        position: absolute;
+        top: 30%;
+        left: 550px;
         padding-bottom: 150px;
     }
 }
@@ -990,8 +988,8 @@ body {
     }
     .img {
         /* padding-left: 240px; */
-        position: relative;
-        top: 65%;
+        position: absolute;
+        top: 45%;
         right: 130px;
     }
     .responsive{
@@ -1085,17 +1083,19 @@ body {
     }
     .img {
         position: relative;
-        left: 10px;
+        left: 15px;
         top: 2%;
-        padding-bottom: 30px;
-        padding-left: 0;
+        padding-bottom: 25px;
+        padding-left: 20px;
         margin-left: 0;
+        padding-top: 20px;
     }
-    /* .responsivem {
-        min-width: 1px;
-    } */
+    .responsive {
+        box-shadow: 0 0 1.5pc cyan, 0 0 1.5px cyan, 0 0 3px cyan;
+        border: #0ef 3px solid;
+    }
     .btn-box:hover {
-        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
+        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan, 0 0 20px cyan, 0 0 25px cyan;
     }
     /*about*/
     .about{
@@ -1258,7 +1258,7 @@ body {
         left: -10%;
         top: 2%;
         padding-bottom: 30px;
-        padding-left: 0;
+        padding-left: 50px;
         margin-left: 0;
         margin-right: 0;
     }
