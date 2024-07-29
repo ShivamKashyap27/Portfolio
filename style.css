@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -37,11 +38,11 @@ body {
     letter-spacing: 5px;
     opacity: 0;
     animation: slideRight 1s ease forwards;
+    font-family: 'Great Vibes', cursive;
 }
 
 .logo:hover {
     color: #0ef;
-    box-shadow: 0 0 20px #0ef;
 }    
 
 .navbar a {
@@ -60,7 +61,6 @@ body {
 .navbar a:hover {
     color: #0ef;
     text-decoration: underline;
-    box-shadow: 0 0 20px #0ef;
 }
 
 .profile {
@@ -224,7 +224,6 @@ body {
     background-size: cover;
     padding-right: 10%;
     margin-top: 2.5%;
-    /*margin-top: 7.5%;*/
     opacity: 1;
 }
 
@@ -274,7 +273,7 @@ body {
 }
 
 .abtbtn-box:hover {
-    box-shadow: 0 0 5pc cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
 
 
@@ -1081,6 +1080,13 @@ body {
         font-size: 18px;
         font-weight: 200;
     }
+    .home-sci{
+        padding-left: 10px;
+    }
+    .btn-box{
+        left: 60px;
+        width: 200px;
+    }
     .img {
         position: relative;
         left: 15px;
@@ -1115,7 +1121,7 @@ body {
         text-align: left;
     }
     .abtbtn-box:hover {
-        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
+        box-shadow: 0 0 2px cyan, 0 0 2px cyan, 0 0 2pc cyan, 0 0 2px cyan, 0 0 2px cyan;
     }
 
     /*skills*/
@@ -1180,7 +1186,9 @@ body {
         font-size: 15px;
         padding: 5px 5px 0 0;
     }
-    
+    .contact-icons{
+        padding-left: 10px;
+    }
     .top{
         position: fixed;
         bottom: 2rem;
