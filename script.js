@@ -1,10 +1,18 @@
 let menu = document.querySelector('.profile');
 let navbar = document.querySelector('.navbar');
 
-menu.onclick = () => {
-    menu.classList.toggle('bx-z');
+menu.onclick = (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('active');
     navbar.classList.toggle('open');
 };
+
+document.onclick = (e) => {
+    if(!menu.contains(e.target) && !navbar.contains(e.target)){
+        menu.classList.remove('active');
+        navbar.classList.remove('open');
+    }
+}
 
 let typed = new Typed(".msg", {
     strings: ["Frontend Developer", "Web Developer"],
