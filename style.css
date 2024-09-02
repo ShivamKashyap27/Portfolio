@@ -645,8 +645,8 @@ body {
 .prj-list div {
     background-color: transparent;
     padding: 40px;
-    font-size: 13px;
-    font-weight: 13px;
+    font-size: 13px; 
+    font-weight: 13px; 
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
@@ -1203,12 +1203,12 @@ body {
     
 }
 
-@media (max-width: 400px) {
-    *{
+@media (max-width: 400px) and (min-width: 360px) {
+    /* *{
         overflow-x: hidden;
-    }
+    } */
     .header{
-        display:block;
+        display: block;
     }
     .logo {
         position: relative;
@@ -1223,12 +1223,44 @@ body {
     .navbar a {
         font-size: 13px;
         font-weight: 200;
-        margin-left: 0px;
+        /* margin-left: 0px; */
         padding: 10px 4px 0 0;
+        border-bottom: 1px solid #444;
+        margin: 12px 0;
+        transition: all .50s ease;
+    }
+    .profile {
+        display:block;
+        position: fixed;
+        top: 12px;
+        /* right: -15px; */
+        left: 300px;
     }
     .navbar a::after{
         content: "\a";
         white-space: pre;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 62px;
+        width: 100px;
+        right: -100px;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        background: #333;
+        z-index: 1;
+        /* justify-content: center; */
+        transition: all .50s ease;
+        text-align: center;
+    }
+    .navbar a:hover {
+        color: #0ef;
+        text-decoration: underline;
+    }
+    .navbar.open{
+        right: 0;
     }
 
     /*home*/
